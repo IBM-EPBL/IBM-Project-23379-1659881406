@@ -1,0 +1,19 @@
+{% extends "template.html" %}
+{% block content %}
+<form>
+<div class="log-form">
+    <h2>Login to your account</h2>
+    <form>
+      <label for="email"><b>Email</b></label>
+      <input type="text" title="username" placeholder="username" />
+      <label for="psw"><b>Password</b></label>
+      <input type="password" title="username" placeholder="password" />
+    </div><br>
+
+      <div>
+      <button type="submit" class="btn">Login</button>
+      <a class="forgot" href="#">Forgot Username?</a>
+    </form>
+  </div>
+</form>
+  {% endblock %}
