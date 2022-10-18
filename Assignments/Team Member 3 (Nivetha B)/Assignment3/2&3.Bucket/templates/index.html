@@ -1,0 +1,19 @@
+<h1 href="/">HOME</h1>
+<br><hr>
+<h1>IBM Object Storage</h1>
+
+
+<!doctype html>
+<html>
+   <head>
+      <link rel="stylesheet" href="{{ url_for('static',filename='style.css') }}">
+   </head>
+   <body align="center">
+      {% for row in files %}
+         <div style="border: 1px solid #EFEFEF;margin:10px;">
+            <h3>Filename : {{row}} </h3>
+            <img src="https://first02.s3.ap.cloud-object-storage.appdomain.cloud/{{row}}" width="150px"></td>
+         </div>
+      {% endfor %}
+   </body>
+</html>
